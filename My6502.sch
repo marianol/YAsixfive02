@@ -1037,12 +1037,12 @@ Wire Wire Line
 $Comp
 L Device:C C6
 U 1 1 6163A5A8
-P 8900 4800
-F 0 "C6" H 9015 4846 50  0000 L CNN
-F 1 "0.1uF" H 9015 4755 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8938 4650 50  0001 C CNN
-F 3 "~" H 8900 4800 50  0001 C CNN
-	1    8900 4800
+P 9050 4800
+F 0 "C6" H 9165 4846 50  0000 L CNN
+F 1 "0.1uF" H 9165 4755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 9088 4650 50  0001 C CNN
+F 3 "~" H 9050 4800 50  0001 C CNN
+	1    9050 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1118,10 +1118,10 @@ Connection ~ 8150 5300
 Wire Wire Line
 	8150 5300 7700 5300
 Wire Wire Line
-	8900 4650 8900 4300
+	9050 4650 8900 4300
 Connection ~ 8900 4300
 Wire Wire Line
-	8900 4300 8150 4300
+	8900 4300 8600 4300
 Wire Wire Line
 	8150 4650 8150 4300
 Connection ~ 8150 4300
@@ -1182,10 +1182,10 @@ F 3 "~" H 6200 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 5300 8150 5300
+	8900 5300 8600 5300
 Connection ~ 8900 5300
 Wire Wire Line
-	8900 4950 8900 5300
+	9050 4950 8900 5300
 Wire Wire Line
 	9500 5300 8900 5300
 $Comp
@@ -1759,6 +1759,27 @@ Wire Wire Line
 	7300 7450 8850 7450
 Wire Wire Line
 	8850 6600 8850 7450
+$Comp
+L Device:C C7
+U 1 1 63306EB2
+P 8600 4800
+F 0 "C7" H 8715 4846 50  0000 L CNN
+F 1 "0.1uF" H 8715 4755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8638 4650 50  0001 C CNN
+F 3 "~" H 8600 4800 50  0001 C CNN
+	1    8600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4650 8600 4300
+Connection ~ 8600 4300
+Wire Wire Line
+	8600 4300 8150 4300
+Wire Wire Line
+	8600 4950 8600 5300
+Connection ~ 8600 5300
+Wire Wire Line
+	8600 5300 8150 5300
 Wire Bus Line
 	4950 2600 4950 3800
 Wire Bus Line
