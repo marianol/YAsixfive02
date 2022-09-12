@@ -18,7 +18,7 @@ L 65xx:WD65C02 U1
 U 1 1 612219A0
 P 2650 2000
 F 0 "U1" H 2650 3187 60  0000 C CNN
-F 1 "WD65C02" H 2650 3081 60  0000 C CNN
+F 1 "CPU - WD65C02" H 2650 3081 60  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 2150 2200 60  0001 C CNN
 F 3 "" H 2150 2200 60  0000 C CNN
 	1    2650 2000
@@ -452,8 +452,6 @@ Wire Wire Line
 Connection ~ 2450 4600
 Wire Wire Line
 	2450 4600 2550 4600
-Text GLabel 2350 4800 0    50   Input ~ 0
-CLK
 Wire Wire Line
 	2350 4800 2550 4800
 Text GLabel 3400 5050 2    50   Output ~ 0
@@ -501,7 +499,7 @@ L Memory_RAM:CY62256-70PC U3
 U 1 1 613FD26F
 P 9450 2250
 F 0 "U3" H 9450 3331 50  0000 C CNN
-F 1 "CY62256-70PC" H 9450 3240 50  0000 C CNN
+F 1 "RAM - 62256" H 9450 3240 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 9450 2150 50  0001 C CNN
 F 3 "https://ecee.colorado.edu/~mcclurel/Cypress_SRAM_CY62256.pdf" H 9450 2150 50  0001 C CNN
 	1    9450 2250
@@ -512,7 +510,7 @@ L Memory_EEPROM:28C256 U2
 U 1 1 61405640
 P 6700 2150
 F 0 "U2" H 6700 3431 50  0000 C CNN
-F 1 "28C256" H 6700 3340 50  0000 C CNN
+F 1 "ROM - 28C256" H 6700 3340 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6700 2150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6700 2150 50  0001 C CNN
 	1    6700 2150
@@ -1244,7 +1242,7 @@ Text Label 9700 7950 3    50   ~ 0
 d7
 Wire Bus Line
 	11300 8150 11350 8200
-Text GLabel 8900 8050 3    50   Input ~ 0
+Text GLabel 8900 8050 3    50   Output ~ 0
 CLK
 Text GLabel 7900 6150 1    50   Input ~ 0
 R~W
@@ -1252,8 +1250,6 @@ Text GLabel 9100 8050 3    50   Input ~ 0
 ~IO_CS
 Text GLabel 7500 5950 1    50   Input ~ 0
 ~RESET
-Text GLabel 8100 8050 3    50   Output ~ 0
-EXP_IRQ
 Wire Wire Line
 	7900 6250 7900 6150
 $Comp
@@ -1269,12 +1265,6 @@ F 3 "" H 6500 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 6250 6500 6050
-Text GLabel 7500 8050 3    50   Output ~ 0
-~ACIA_IRQ
-Text GLabel 7700 8050 3    50   Output ~ 0
-~VIA1_IRQ
-Text GLabel 7900 8050 3    50   Output ~ 0
-~VIA2_IRQ
 $Comp
 L Device:C C5
 U 1 1 63306EB2
@@ -1441,14 +1431,6 @@ Text GLabel 9500 8050 3    50   Input ~ 0
 Wire Wire Line
 	9500 8050 9500 7850
 Wire Wire Line
-	7500 8050 7500 7850
-Wire Wire Line
-	7700 8050 7700 7850
-Wire Wire Line
-	7900 8050 7900 7850
-Wire Wire Line
-	8100 8050 8100 7850
-Wire Wire Line
 	700  1050 700  1550
 Connection ~ 700  1550
 Wire Wire Line
@@ -1488,7 +1470,7 @@ L Connector:Conn_01x03_Male J1
 U 1 1 68FE8E47
 P 5650 4800
 F 0 "J1" H 5758 5081 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 5758 4990 50  0000 C CNN
+F 1 "POWER" H 5758 4990 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5650 4800 50  0001 C CNN
 F 3 "~" H 5650 4800 50  0001 C CNN
 	1    5650 4800
@@ -1508,6 +1490,12 @@ Wire Wire Line
 	5850 4800 6200 4800
 Wire Wire Line
 	6200 4800 6200 4300
+NoConn ~ 7500 7850
+NoConn ~ 7700 7850
+NoConn ~ 7900 7850
+NoConn ~ 8100 7850
+Text GLabel 2350 4800 0    50   Input ~ 0
+CLK
 Wire Bus Line
 	1200 4500 1200 5700
 Wire Bus Line
@@ -1528,4 +1516,6 @@ Wire Bus Line
 	6000 1250 6000 2750
 Wire Bus Line
 	7900 5950 11000 5950
+Text Notes 3300 5900 0    50   ~ 0
+- 32k bytes of RAM (address range $0000-$7FFF) \n- 8k bytes if  I/O ($8000-$9FFF).\n- 24k bytes ROM ($A000-$FFFF) 
 $EndSCHEMATC
