@@ -1173,14 +1173,14 @@ Text GLabel 2150 5550 2    50   Input ~ 0
 R~W
 Text GLabel 1850 5650 2    50   Input ~ 0
 ~IO_CS
-Text GLabel 2150 5750 2    50   Input ~ 0
+Text GLabel 2250 5750 2    50   Input ~ 0
 ~RESET
 Wire Wire Line
 	1750 5550 2150 5550
 Wire Wire Line
 	1750 5650 1850 5650
 Wire Wire Line
-	1750 5750 2150 5750
+	1750 5750 2250 5750
 $Comp
 L power:GND #PWR0104
 U 1 1 6205A520
@@ -1207,20 +1207,16 @@ NoConn ~ 1250 6250
 NoConn ~ 1250 6350
 NoConn ~ 1750 6350
 NoConn ~ 1750 6250
-Text GLabel 7350 8450 0    50   Output ~ 0
+Text GLabel 1850 6050 2    50   Output ~ 0
 ~ACIA_IRQ
-Text GLabel 7350 8600 0    50   Output ~ 0
+Text GLabel 1850 5850 2    50   Output ~ 0
 ~VIA2_IRQ
 Wire Wire Line
 	8850 1600 8500 1600
 Wire Wire Line
-	2150 5950 1750 5950
+	2250 5950 1750 5950
 Wire Wire Line
-	7350 8600 8100 8600
-Wire Wire Line
-	1750 6150 2150 6150
-Wire Wire Line
-	7350 8450 8200 8450
+	1750 6150 2250 6150
 $Comp
 L Device:C C6
 U 1 1 63306EB2
@@ -2322,7 +2318,7 @@ Wire Wire Line
 	5200 7400 5300 7400
 Wire Wire Line
 	5300 7650 5200 7650
-Text GLabel 2150 5950 2    50   Output ~ 0
+Text GLabel 2250 5950 2    50   Output ~ 0
 EXP_IRQ
 $Comp
 L power:+5V #PWR0121
@@ -2418,10 +2414,12 @@ Wire Wire Line
 	9450 6950 9450 6850
 Connection ~ 9450 6850
 NoConn ~ 10200 6800
-Text GLabel 2150 6150 2    50   Input ~ 0
+Text GLabel 2250 6150 2    50   Input ~ 0
 ~NMI
-NoConn ~ 1750 5850
-NoConn ~ 1750 6050
+Wire Wire Line
+	1850 6050 1750 6050
+Wire Wire Line
+	1850 5850 1750 5850
 Wire Bus Line
 	5550 6900 5550 7300
 Wire Bus Line
