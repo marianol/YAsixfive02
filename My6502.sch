@@ -223,41 +223,41 @@ Wire Wire Line
 $Comp
 L Oscillator:CXO_DIP14 X1
 U 1 1 612A3428
-P 8950 2800
-F 0 "X1" H 8550 2900 50  0000 L CNN
-F 1 "OSC" H 8700 3050 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 9400 2450 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 8850 2800 50  0001 C CNN
-	1    8950 2800
+P 8800 2900
+F 0 "X1" H 8400 3000 50  0000 L CNN
+F 1 "OSC" H 8550 3150 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 9250 2550 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 8700 2900 50  0001 C CNN
+	1    8800 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 9500 2950 3    50   Output ~ 0
+Text GLabel 9200 3200 3    50   Output ~ 0
 CLK
 $Comp
 L power:+5V #PWR05
 U 1 1 612A648A
-P 8950 2400
-F 0 "#PWR05" H 8950 2250 50  0001 C CNN
-F 1 "+5V" H 8965 2573 50  0000 C CNN
-F 2 "" H 8950 2400 50  0001 C CNN
-F 3 "" H 8950 2400 50  0001 C CNN
-	1    8950 2400
+P 8800 2500
+F 0 "#PWR05" H 8800 2350 50  0001 C CNN
+F 1 "+5V" H 8815 2673 50  0000 C CNN
+F 2 "" H 8800 2500 50  0001 C CNN
+F 3 "" H 8800 2500 50  0001 C CNN
+	1    8800 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 2400 8950 2500
+	8800 2500 8800 2600
 $Comp
 L power:GND #PWR06
 U 1 1 612A9420
-P 8950 3200
-F 0 "#PWR06" H 8950 2950 50  0001 C CNN
-F 1 "GND" H 8955 3027 50  0000 C CNN
-F 2 "" H 8950 3200 50  0001 C CNN
-F 3 "" H 8950 3200 50  0001 C CNN
-	1    8950 3200
+P 8800 3300
+F 0 "#PWR06" H 8800 3050 50  0001 C CNN
+F 1 "GND" H 8805 3127 50  0000 C CNN
+F 2 "" H 8800 3300 50  0001 C CNN
+F 3 "" H 8800 3300 50  0001 C CNN
+	1    8800 3300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2800
+NoConn ~ 8500 2900
 $Comp
 L 74xx:74HCT00 U4
 U 1 1 612B5533
@@ -416,13 +416,13 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 61340F96
-P 9500 2500
-F 0 "J2" V 9300 2550 50  0000 R CNN
-F 1 "CLK Jumper" V 9400 2700 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9500 2500 50  0001 C CNN
-F 3 "~" H 9500 2500 50  0001 C CNN
-	1    9500 2500
-	0    1    1    0   
+P 9600 3000
+F 0 "J2" V 9400 3050 50  0000 R CNN
+F 1 "CLK Jumper" V 9500 3200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9600 3000 50  0001 C CNN
+F 3 "~" H 9600 3000 50  0001 C CNN
+	1    9600 3000
+	-1   0    0    1   
 $EndComp
 Text GLabel 6900 3800 2    50   Output ~ 0
 ~RESET
@@ -1297,26 +1297,19 @@ Wire Wire Line
 Text Notes 9800 650  0    50   ~ 0
 Power
 $Comp
-L Switch:SW_Push_Dual SW1
+L Switch:SW_Push SW1
 U 1 1 6127D438
-P 6600 4050
-F 0 "SW1" H 6646 3762 50  0000 R CNN
-F 1 "RESET" H 6700 3650 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 6600 4250 50  0001 C CNN
-F 3 "~" H 6600 4250 50  0001 C CNN
-	1    6600 4050
+P 6600 4350
+F 0 "SW1" H 6700 4550 50  0000 R CNN
+F 1 "RESET" H 6700 4250 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 6600 4550 50  0001 C CNN
+F 3 "~" H 6600 4550 50  0001 C CNN
+	1    6600 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 3800 6800 4050
-Wire Wire Line
-	6800 4250 6800 4350
-Wire Wire Line
-	6800 4050 6800 4250
-Connection ~ 6800 4050
-Connection ~ 6800 4250
-Wire Wire Line
-	6400 4050 6400 4250
+	6800 3800 6800 4350
+Connection ~ 6800 4350
 Wire Wire Line
 	8000 4450 8000 4600
 $Comp
@@ -1330,9 +1323,6 @@ F 3 "" H 6400 4550 50  0001 C CNN
 	1    6400 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 4550 6400 4250
-Connection ~ 6400 4250
 $Comp
 L Connector:TestPoint_Probe TP2
 U 1 1 63D64EAB
@@ -1364,23 +1354,19 @@ F 3 "~" H 3650 1900 50  0001 C CNN
 $EndComp
 Connection ~ 3450 1900
 Wire Wire Line
-	9400 2700 9400 2800
-Wire Wire Line
-	8950 3100 8950 3200
+	8800 3200 8800 3300
 $Comp
 L power:GND #PWR0106
 U 1 1 6363C47B
-P 9600 3200
-F 0 "#PWR0106" H 9600 2950 50  0001 C CNN
-F 1 "GND" H 9605 3027 50  0000 C CNN
-F 2 "" H 9600 3200 50  0001 C CNN
-F 3 "" H 9600 3200 50  0001 C CNN
-	1    9600 3200
+P 9350 3250
+F 0 "#PWR0106" H 9350 3000 50  0001 C CNN
+F 1 "GND" H 9355 3077 50  0000 C CNN
+F 2 "" H 9350 3250 50  0001 C CNN
+F 3 "" H 9350 3250 50  0001 C CNN
+	1    9350 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9500 2700 9500 2950
-Text Notes 8550 2150 0    50   ~ 0
+Text Notes 8400 2250 0    50   ~ 0
 Clock
 Text GLabel 3000 1400 1    50   Output ~ 0
 PHI2
@@ -1678,15 +1664,11 @@ U 1 1 651371E7
 P 4350 5050
 F 0 "U8" H 4350 6237 60  0000 C CNN
 F 1 "WD65C22" H 4350 6131 60  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 3850 5250 60  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 3850 5250 60  0001 C CNN
 F 3 "" H 3850 5250 60  0000 C CNN
 	1    4350 5050
 	1    0    0    -1  
 $EndComp
-Text Label 9150 2900 0    50   ~ 0
-CLK_OUT
-Wire Wire Line
-	9600 2700 9600 3200
 Wire Wire Line
 	10150 3400 10150 2950
 Wire Wire Line
@@ -2177,8 +2159,6 @@ Wire Wire Line
 Connection ~ 11000 2500
 Wire Wire Line
 	11000 2500 11000 2950
-Wire Wire Line
-	9250 2800 9400 2800
 Text Notes 6150 650  0    50   ~ 0
 ROM 32K (24K in Use)
 Text Notes 6950 6850 0    50   ~ 0
@@ -2470,6 +2450,20 @@ Wire Wire Line
 	10950 3950 10950 4050
 Wire Wire Line
 	10950 4350 10950 4500
+Wire Wire Line
+	6400 4350 6400 4550
+Text Label 9100 2900 0    50   ~ 0
+OSC_OUT
+Wire Wire Line
+	9100 2900 9400 2900
+Wire Wire Line
+	9400 3000 9200 3000
+Wire Wire Line
+	9200 3000 9200 3200
+Wire Wire Line
+	9400 3100 9350 3100
+Wire Wire Line
+	9350 3100 9350 3250
 Wire Bus Line
 	5550 6900 5550 7300
 Wire Bus Line
