@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9-0-10_14)"
     },
-    "CreationDate":  "2022-09-06T13:19:47-05:00"
+    "CreationDate":  "2022-10-07T18:33:01-05:00"
   },
   "GeneralSpecs":
   {
@@ -32,7 +32,7 @@
       "PadToPad":  0.200,
       "PadToTrack":  0.200,
       "TrackToTrack":  0.200,
-      "MinLineWidth":  0.250,
+      "MinLineWidth":  0.152,
       "TrackToRegion":  0.508,
       "RegionToRegion":  0.508
     }
@@ -50,16 +50,6 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "My6502-F_Paste.gtp",
-      "FileFunction":  "SolderPaste,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "My6502-B_Paste.gbp",
-      "FileFunction":  "SolderPaste,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
       "Path":  "My6502-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
@@ -70,18 +60,18 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "My6502-F_Mask.gts",
-      "FileFunction":  "SolderMask,Top",
-      "FilePolarity":  "Negative"
-    },
-    {
-      "Path":  "My6502-B_Mask.gbs",
-      "FileFunction":  "SolderMask,Bot",
-      "FilePolarity":  "Negative"
-    },
-    {
       "Path":  "My6502-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "My6502-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "My6502-B_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
   ],
@@ -90,14 +80,6 @@
     {
       "Type":  "Legend",
       "Notes":  "Layer F.SilkS"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer F.Paste"
-    },
-    {
-      "Type":  "SolderMask",
-      "Notes":  "Layer F.Mask"
     },
     {
       "Type":  "Copper",
@@ -111,14 +93,6 @@
     {
       "Type":  "Copper",
       "Notes":  "Layer B.Cu"
-    },
-    {
-      "Type":  "SolderMask",
-      "Notes":  "Layer B.Mask"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer B.Paste"
     },
     {
       "Type":  "Legend",
