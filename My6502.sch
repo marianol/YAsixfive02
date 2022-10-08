@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "YAsixfive02 SBC"
+Date "2022-10-07"
+Rev "1.5"
+Comp "(c) Mariano Luna"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -2510,7 +2510,7 @@ U 1 1 6344051E
 P 11000 5100
 F 0 "J2" V 10850 5050 50  0000 L CNN
 F 1 "Aux 5VDC" V 10950 4950 50  0000 L CNN
-F 2 "" H 11000 5100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11000 5100 50  0001 C CNN
 F 3 "~" H 11000 5100 50  0001 C CNN
 	1    11000 5100
 	0    1    1    0   
@@ -2546,6 +2546,28 @@ Wire Wire Line
 Connection ~ 10150 5400
 Wire Wire Line
 	10150 5400 10150 5650
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 6375840F
+P 10850 6500
+F 0 "J7" V 10906 6544 50  0000 L CNN
+F 1 "GND" V 11004 6544 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10850 6500 50  0001 C CNN
+F 3 "~" H 10850 6500 50  0001 C CNN
+	1    10850 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 63759C59
+P 10850 6700
+F 0 "#PWR015" H 10850 6450 50  0001 C CNN
+F 1 "GND" H 10855 6527 50  0000 C CNN
+F 2 "" H 10850 6700 50  0001 C CNN
+F 3 "" H 10850 6700 50  0001 C CNN
+	1    10850 6700
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	5550 6900 5550 7300
 Wire Bus Line
@@ -2582,26 +2604,4 @@ Wire Bus Line
 	6550 1100 6550 2600
 Wire Bus Line
 	950  4750 950  6350
-$Comp
-L Connector:Conn_01x01_Male J7
-U 1 1 6375840F
-P 10850 6500
-F 0 "J7" V 10906 6544 50  0000 L CNN
-F 1 "GND" V 11004 6544 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10850 6500 50  0001 C CNN
-F 3 "~" H 10850 6500 50  0001 C CNN
-	1    10850 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 63759C59
-P 10850 6700
-F 0 "#PWR015" H 10850 6450 50  0001 C CNN
-F 1 "GND" H 10855 6527 50  0000 C CNN
-F 2 "" H 10850 6700 50  0001 C CNN
-F 3 "" H 10850 6700 50  0001 C CNN
-	1    10850 6700
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
