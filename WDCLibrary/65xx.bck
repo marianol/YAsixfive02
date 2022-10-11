@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: Dienstag, 05. August 2014 07:04:08
+EESchema-DOCLIB  Version 2.0
 #
 $CMP 6510
 D Western Digital Design Center - 65C02 8bit CPU
@@ -26,7 +26,7 @@ K RIOT, MOS, 65xx
 $ENDCMP
 #
 $CMP W65C51N
-D W65C51N ACIA 
+D W65C51N ACIA
 K UART, 65xx
 $ENDCMP
 #
