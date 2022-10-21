@@ -8289,7 +8289,7 @@
     (property "Value" "MC6850_" (id 1) (at 113.03 109.7026 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "Package_DIP:DIP-24_W15.24mm_LongPads" (id 2) (at 113.03 144.78 0)
+    (property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket_LongPads" (id 2) (at 113.03 144.78 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 113.03 144.78 0)
@@ -8628,7 +8628,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000063d64eab)
     (property "Reference" "TP2" (id 0) (at 218.44 87.63 90))
-    (property "Value" "~RESET" (id 1) (at 218.44 90.17 90))
+    (property "Value" "~{RESET}" (id 1) (at 218.44 90.17 90))
     (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 223.52 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -9139,7 +9139,7 @@
     (uuid 70cb47bf-9219-4417-98a4-88cbb4e37bcd)
     (property "Reference" "U10" (id 0) (at 88.9 180.34 0))
     (property "Value" "74LS138" (id 1) (at 87.63 177.8 0))
-    (property "Footprint" "Package_DIP:DIP-16_W7.62mm_LongPads" (id 2) (at 88.9 173.99 0)
+    (property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" (id 2) (at 88.9 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 88.9 173.99 0)
@@ -9172,7 +9172,7 @@
     (property "Value" "IO7" (id 1) (at 146.1008 130.556 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 147.32 130.81 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" (id 2) (at 147.32 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 147.32 130.81 0)
@@ -9649,10 +9649,10 @@
       (reference "TP1") (unit 1) (value "CLK") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
     )
     (path "/00000000-0000-0000-0000-000063d64eab"
-      (reference "TP2") (unit 1) (value "~RESET") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP2") (unit 1) (value "~{RESET}") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
     )
     (path "/75f85b84-9777-4d8b-a0f4-27c0e653b059"
-      (reference "TP3") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP3") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
     )
     (path "/50f6d03f-fd54-4133-b062-682e343debb8"
       (reference "TP4") (unit 1) (value "IO5") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
@@ -9709,10 +9709,10 @@
       (reference "U8") (unit 1) (value "DS1813") (footprint "Package_TO_SOT_THT:TO-92")
     )
     (path "/00000000-0000-0000-0000-0000634754d5"
-      (reference "U9") (unit 1) (value "MC6850_") (footprint "Package_DIP:DIP-24_W15.24mm_LongPads")
+      (reference "U9") (unit 1) (value "MC6850_") (footprint "Package_DIP:DIP-24_W15.24mm_Socket_LongPads")
     )
     (path "/70cb47bf-9219-4417-98a4-88cbb4e37bcd"
-      (reference "U10") (unit 1) (value "74LS138") (footprint "Package_DIP:DIP-16_W7.62mm_LongPads")
+      (reference "U10") (unit 1) (value "74LS138") (footprint "Package_DIP:DIP-16_W7.62mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-0000612a3428"
       (reference "X1") (unit 1) (value "OSC") (footprint "Oscillator:Oscillator_DIP-14")
