@@ -8908,7 +8908,7 @@
     (property "Value" "IO7" (id 1) (at 205.7908 155.956 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 207.01 156.21 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" (id 2) (at 207.01 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 207.01 156.21 0)
@@ -9003,7 +9003,7 @@
     (property "Value" "IO5" (id 1) (at 193.0908 150.876 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 194.31 151.13 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" (id 2) (at 194.31 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 194.31 151.13 0)
@@ -9216,7 +9216,7 @@
     (property "Value" "IO6" (id 1) (at 199.4408 153.416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 200.66 153.67 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" (id 2) (at 200.66 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 200.66 153.67 0)
@@ -9655,13 +9655,13 @@
       (reference "TP3") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
     )
     (path "/50f6d03f-fd54-4133-b062-682e343debb8"
-      (reference "TP4") (unit 1) (value "IO5") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP4") (unit 1) (value "IO5") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
     )
     (path "/8276eb26-106b-49ba-8e02-d04faf35f0c9"
-      (reference "TP5") (unit 1) (value "IO6") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP5") (unit 1) (value "IO6") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
     )
     (path "/2733c48f-18fb-498f-8b30-fc79ccb809ef"
-      (reference "TP6") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP6") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
     )
     (path "/00000000-0000-0000-0000-0000612219a0"
       (reference "U1") (unit 1) (value "WD65C02") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
