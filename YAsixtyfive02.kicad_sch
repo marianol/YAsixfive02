@@ -7,7 +7,7 @@
   (title_block
     (title "YAsixfive02 SBC")
     (date "2022-10-11")
-    (rev "1.6.0")
+    (rev "1.6.1")
     (company "(c) Mariano Luna")
   )
 
@@ -7802,7 +7802,7 @@
     (property "Value" "100uF" (id 1) (at 266.573 140.5128 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" (id 2) (at 269.24 142.5448 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (id 2) (at 269.24 142.5448 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 265.43 143.51 0)
@@ -8088,7 +8088,7 @@
     (property "Value" "CLK" (id 1) (at 86.4108 35.306 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 87.63 35.56 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" (id 2) (at 87.63 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 87.63 35.56 0)
@@ -8369,7 +8369,7 @@
     (uuid 00000000-0000-0000-0000-000063d64eab)
     (property "Reference" "TP2" (id 0) (at 226.06 85.09 90))
     (property "Value" "~{RESET}" (id 1) (at 226.06 87.63 90))
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 231.14 81.28 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" (id 2) (at 231.14 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 231.14 81.28 0)
@@ -8735,7 +8735,7 @@
     (property "Value" "ACIA_CLK" (id 1) (at 86.36 97.5614 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" (id 2) (at 87.63 101.6 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" (id 2) (at 87.63 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 87.63 101.6 0)
@@ -9329,7 +9329,7 @@
       (reference "C7") (unit 1) (value "0.1uF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/00000000-0000-0000-0000-00006163f681"
-      (reference "C8") (unit 1) (value "100uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm")
+      (reference "C8") (unit 1) (value "100uF") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
     )
     (path "/103b9359-a2d1-4e8c-9f92-4774d1636b0a"
       (reference "D0") (unit 1) (value "CTL_0") (footprint "LED_THT:LED_D3.0mm")
@@ -9440,10 +9440,10 @@
       (reference "SW2") (unit 1) (value "SW_Push_DPDT") (footprint "Button_Switch_THT:SW_NKK_GW12LJP")
     )
     (path "/00000000-0000-0000-0000-00006349f52f"
-      (reference "TP1") (unit 1) (value "CLK") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP1") (unit 1) (value "CLK") (footprint "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm")
     )
     (path "/00000000-0000-0000-0000-000063d64eab"
-      (reference "TP2") (unit 1) (value "~{RESET}") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP2") (unit 1) (value "~{RESET}") (footprint "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm")
     )
     (path "/75f85b84-9777-4d8b-a0f4-27c0e653b059"
       (reference "TP3") (unit 1) (value "IO7") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
@@ -9452,7 +9452,7 @@
       (reference "TP4") (unit 1) (value "RDY") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
     )
     (path "/3f7b3ccb-d9de-421f-9547-3f5e141f058b"
-      (reference "TP7") (unit 1) (value "ACIA_CLK") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
+      (reference "TP7") (unit 1) (value "ACIA_CLK") (footprint "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm")
     )
     (path "/00000000-0000-0000-0000-0000612219a0"
       (reference "U1") (unit 1) (value "WD65C02") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
