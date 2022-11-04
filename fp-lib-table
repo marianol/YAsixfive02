@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Apple2 Edge")(type "KiCad")(uri "${KIPRJMOD}/library/Apple2_bus.pretty")(options "")(descr ""))
+)
