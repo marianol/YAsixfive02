@@ -449,7 +449,6 @@
           "unconnected-(U1-Pad35)",
           "unconnected-(U1-Pad39)",
           "unconnected-(U1-Pad5)",
-          "unconnected-(U1-Pad7)",
           "unconnected-(X1-Pad1)",
           "~{ACIA_IRQ}",
           "~{CTS}",
