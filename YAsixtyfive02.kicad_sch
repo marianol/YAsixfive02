@@ -5254,7 +5254,7 @@
   (symbol (lib_id "Connector:Conn_01x03_Male") (at 143.51 88.9 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3b98ffc1-9035-4307-8f19-9251da72e25d)
-    (property "Reference" "JP3" (id 0) (at 148.59 90.17 90)
+    (property "Reference" "JP4" (id 0) (at 148.59 90.17 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "ACIA CLK SEL" (id 1) (at 146.05 93.98 90)
@@ -5933,20 +5933,20 @@
     (path "/792c13a4-912d-4cd5-9a13-da9f7b5bef14"
       (reference "J1") (unit 1) (value "~{NMI}") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
     )
-    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/0b79242b-1c36-455b-b596-ca1b42f87b16"
-      (reference "J2") (unit 1) (value "GND") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
-    )
     (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/07015d73-0310-4851-9b16-bc3559f3f1e8"
-      (reference "J3") (unit 1) (value "Aux 5VDC") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+      (reference "J2") (unit 1) (value "AUX 5VDC") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/8f296b62-1060-48e7-a2d1-f25a3e2fc63b"
+      (reference "J3") (unit 1) (value "Power 5V") (footprint "Connector_BarrelJack:BarrelJack_Horizontal")
     )
     (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/cb3dfdbe-0707-4d8c-bd32-febd6074bb18"
       (reference "J4") (unit 1) (value "Expansion Bus") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical")
     )
-    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/8f296b62-1060-48e7-a2d1-f25a3e2fc63b"
-      (reference "J5") (unit 1) (value "Power 5V") (footprint "Connector_BarrelJack:BarrelJack_Horizontal")
-    )
     (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/1a87ef41-cb18-4c6d-8f9a-e4cb13e15948"
       (reference "J6") (unit 1) (value "FTDI Serial2USB") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
+    )
+    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/0b79242b-1c36-455b-b596-ca1b42f87b16"
+      (reference "J7") (unit 1) (value "GND") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061231812"
       (reference "JP1") (unit 1) (value "~{VP}") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -5955,7 +5955,10 @@
       (reference "JP2") (unit 1) (value "CLK SEL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/3b98ffc1-9035-4307-8f19-9251da72e25d"
-      (reference "JP3") (unit 1) (value "ACIA CLK SEL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+      (reference "JP4") (unit 1) (value "ACIA CLK SEL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/ec82d084-09a9-463c-8f00-34fa8e6ff5bf"
+      (reference "R1") (unit 1) (value "150") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/9c6b044c-e41c-4671-afd3-aaae88279b51"
       (reference "R2") (unit 1) (value "3K3") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
@@ -5968,9 +5971,6 @@
     )
     (path "/c55e9565-cc9e-46dd-8e16-a57c7dad2b47"
       (reference "R5") (unit 1) (value "3K3") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
-    )
-    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/ec82d084-09a9-463c-8f00-34fa8e6ff5bf"
-      (reference "R6") (unit 1) (value "150") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/fc702c50-0c03-4152-874f-46b58b317ba5"
       (reference "R6") (unit 1) (value "3K3") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
@@ -5990,11 +5990,11 @@
     (path "/7982dd79-c514-4066-bdf9-06904e5e8884"
       (reference "RN1") (unit 1) (value "R_Network08") (footprint "Resistor_THT:R_Array_SIP9")
     )
-    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/05f29c0e-2c9e-49cb-9b41-3f25352869d6"
-      (reference "SW1") (unit 1) (value "Power SW") (footprint "Button_Switch_THT:SW_NKK_GW12LJP")
-    )
     (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/168c1ae0-4f8c-4148-bc08-de17e4277d12"
-      (reference "SW2") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
+      (reference "SW1") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
+    )
+    (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/05f29c0e-2c9e-49cb-9b41-3f25352869d6"
+      (reference "SW2") (unit 1) (value "Power SW") (footprint "Button_Switch_THT:SW_NKK_GW12LJP")
     )
     (path "/2f707a14-2b5c-4a52-8408-8f4926d12582/3136a088-7bfd-4246-aa13-6b45f10faf20"
       (reference "TP1") (unit 1) (value "CLK") (footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
